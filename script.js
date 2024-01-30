@@ -11,7 +11,7 @@ document.getElementById("botonBusqueda")?.addEventListener("click", ()=> {
 })
 
 function fetchDatosClima(ciudad){
-    fetch(`${urlBase}?q=${ciudad}&appid=${api_key}`)
+    fetch(`${urlBase}?q=${ciudad}&appid=${api_key}`) //&lang=es
     .then(data  => data.json() )
     .then(data => mostrarDatosClima(data))
 
